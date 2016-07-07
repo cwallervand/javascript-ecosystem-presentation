@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="no-nb">
   <head>
-    <script src="https://fb.me/react-15.2.0.js"></script>
-    <script src="https://fb.me/react-dom-15.2.0.js"></script>
+    <!--
+      We can now retreive react and react-dom from the node_modules folder
+      Still...if we had a lot of packages this could get ugly
+    -->
+    <script src="./node_modules/react/dist/react.min.js"></script>
+    <script src="./node_modules/react-dom/dist/react-dom.min.js"></script>
+    <!-- Cant remove this just yet... -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-    
+
+    <!-- Still need to fetch all of our own JS files -->
     <script src="./src/components/TopicList/TopicListItem.jsx" type="text/babel"></script>
     <script src="./src/components/TopicList/TopicList.jsx" type="text/babel"></script>
     <script src="./src/AppContainer.jsx" type="text/babel"></script>

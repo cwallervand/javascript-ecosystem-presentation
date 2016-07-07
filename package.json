@@ -1,0 +1,30 @@
+{
+  "name": "javascript-ecosystem-presentation",
+  "version": "1.0.0",
+  "description": "For presentation purposes of the javascript ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwallervand/javascript-ecosystem-presentation.git"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "es6",
+    "eslint",
+    "babel"
+  ],
+  "author": "Christian Wallervand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwallervand/javascript-ecosystem-presentation/issues"
+  },
+  "homepage": "https://github.com/cwallervand/javascript-ecosystem-presentation#readme",
+  "dependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0"
+  }
+}
