@@ -1,4 +1,8 @@
-window.TopicList = React.createClass({
+var React = require('react');
+
+var TopicListItem = require('./TopicListItem.jsx');
+
+var TopicList = React.createClass({
   render: function() {
     return (
       <ul>
@@ -17,3 +21,5 @@ window.TopicList = React.createClass({
     );
   }
 });
+
+module.exports = TopicList;

@@ -1,4 +1,8 @@
-window.AppContainer = React.createClass({
+var React = require('react');
+
+var TopicList = require('./components/TopicList/TopicList.jsx');
+
+var AppContainer = React.createClass({
   render: function() {
     var topics = [
       {
@@ -29,7 +33,9 @@ window.AppContainer = React.createClass({
     ];
     return (
       <div className="app-container">
-        <TopicList topics={topics}/>
+        <TopicList topics={topics} />
       </div>);
   }
 });
+
+module.exports = AppContainer;
