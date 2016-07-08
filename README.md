@@ -17,3 +17,5 @@ javascript-ecosystem-presentation
 
 ## 4-webpack-devserver
 * Run `npm install`
+* Run `npm start` (no longer need for python server)
+* Open http://localhost:8000/

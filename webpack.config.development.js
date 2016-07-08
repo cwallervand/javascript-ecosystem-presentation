@@ -9,7 +9,8 @@ var config = {
   //Defines the output of the webpack build
   output: {
     filename: '[name].bundle.js', //Specifies a bundle for each entry in the `entry` config
-    path: __dirname + '/www' //Defines the location for the output files
+    path: __dirname + '/www', //Defines the location for the output files
+    publicPath: '/www', //Specifies the public URl for the assets when referenced in a browser
   },
   //Configuration for the modules in the application
   module: {
@@ -18,7 +19,7 @@ var config = {
       {
         loader: 'babel', //The name of the loader (babel-loader)
         test: /\.jsx?$/, //A RegEx to tell the loader which files to consider
-        exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude 
+        exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude
       }
     ]
   }

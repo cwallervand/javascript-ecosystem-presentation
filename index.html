@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="no-nb">
   <head>
-    <!-- Loading the vendor bundle (React ant ReactDOM) -->
-    <script src="./www/vendor.js"></script>
-  </head>
+    <!-- Loading the vendor bundle (React ant ReactDOM) from /www where the webpack build will put the files -->
+    <script src="./www/vendor.bundle.js"></script>
   </head>
   <body>
     <div id="app"></div>
   </body>
-  <!-- Loading the ap bundle -->
-  <script src="./www/app.js"></script>
+  <!-- Loading the app bundle from /www where the webpack build will put the files -->
+  <script src="./www/app.bundle.js"></script>
 </html>
