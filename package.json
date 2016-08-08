@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.development.js",
-    "start": "npm run build && webpack-dev-server --inline --hot --config webpack.config.development.js --progress --colors"
+    "start": "npm run build && webpack-dev-server --inline --hot --config webpack.config.development.js --progress --colors --content-base www/"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

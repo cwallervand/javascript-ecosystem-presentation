@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var config = {
   //Defines entry points and bundles in the aplication
@@ -22,7 +23,16 @@ var config = {
         exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude
       }
     ]
-  }
+  },
+  plugins: [
+    // Configuring an instance of the html webpack plugin
+    new HtmlWebpackPlugin({
+      title: 'Topics of the day',
+      template: 'index_template.html',
+      filename: 'index.html',
+      inject: false,
+    })
+  ]
 };
 
 module.exports = config;

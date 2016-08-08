@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="no-nb">
+  <head>
+    <!-- Get the page title from the webpack plugin configuration -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <!-- Output all js-chunks produced by webpack (app and vendor) -->
+  <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+  <% } %>
+</html>
