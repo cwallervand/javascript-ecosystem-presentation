@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 const TopicListItem = ({name, description}) =>
   <li>
@@ -6,4 +6,9 @@ const TopicListItem = ({name, description}) =>
     <p>{description}</p>
   </li>;
 
-  export default TopicListItem;
+TopicListItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string
+};
+
+export default TopicListItem;

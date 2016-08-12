@@ -15,13 +15,22 @@ var config = {
   },
   //Configuration for the modules in the application
   module: {
+    //Preloaders used by the build, these are run before any other src code is modified by loaders
+    preLoaders: [
+      {
+        loader: 'eslint',
+        test: /\.jsx?$/,
+        exclude: /nodes_modules/,
+      }
+    ],
     //loaders to be used by the build
     loaders: [
       {
         loader: 'babel', //The name of the loader (babel-loader)
         test: /\.jsx?$/, //A RegEx to tell the loader which files to consider
         exclude: /nodes_modules/, //A RegEx to tell the loader which files to exclude
-      }
+      },
+
     ]
   },
   plugins: [

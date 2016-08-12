@@ -1,4 +1,4 @@
-//This is the entry point of the application
+// This is the entry point of the application
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './AppContainer';

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import TopicListItem from './TopicListItem';
 
-const TopicList = ({topics}) =>
+const TopicList = ({ topics }) =>
   <ul>
     {
       topics.map((topic) =>
@@ -14,5 +14,9 @@ const TopicList = ({topics}) =>
       )
     }
   </ul>;
+
+TopicList.propTypes = {
+  topics: PropTypes.array,
+};
 
 export default TopicList;
