@@ -24,3 +24,8 @@ javascript-ecosystem-presentation
 * Run `npm install`
 * Run `npm start` (no longer need for python server)
 * Open http://localhost:8080/
+
+## #6-es6
+* Run `npm install`
+* Run `npm start` (no longer need for python server)
+* Open http://localhost:8080/

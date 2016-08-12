@@ -20,7 +20,7 @@ var config = {
       {
         loader: 'babel', //The name of the loader (babel-loader)
         test: /\.jsx?$/, //A RegEx to tell the loader which files to consider
-        exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude
+        exclude: /nodes_modules/, //A RegEx to tell the loader which files to exclude
       }
     ]
   },
@@ -32,7 +32,12 @@ var config = {
       filename: 'index.html',
       inject: false,
     })
-  ]
+  ],
+  //Tell webpack how to resolve files
+  resolve: {
+    //Resolve file with these extensions
+    extensions: ['', '.js', '.jsx'],
+  },
 };
 
 module.exports = config;

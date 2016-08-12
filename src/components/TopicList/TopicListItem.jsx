@@ -1,14 +1,9 @@
-var React = require('react');
+import React from 'react';
 
-var TopicListItem = React.createClass({
-  render: function() {
-    return (
-      <li>
-        <h3>{this.props.name}</h3>
-        <p>{this.props.description}</p>
-      </li>
-    );
-  }
-});
+const TopicListItem = ({name, description}) =>
+  <li>
+    <h3>{name}</h3>
+    <p>{description}</p>
+  </li>;
 
-module.exports = TopicListItem;
+  export default TopicListItem;

@@ -1,25 +1,18 @@
-var React = require('react');
+import React from 'react';
 
-var TopicListItem = require('./TopicListItem.jsx');
+import TopicListItem from './TopicListItem';
 
-var TopicList = React.createClass({
-  render: function() {
-    return (
-      <ul>
-        {
-          this.props.topics.map(function(topic) {
-            return (
-              <TopicListItem
-                name={topic.name}
-                description={topic.description}
-                key={topic.id}
-              />
-            );
-          })
-        }
-      </ul>
-    );
-  }
-});
+const TopicList = ({topics}) =>
+  <ul>
+    {
+      topics.map((topic) =>
+        <TopicListItem
+          name={topic.name}
+          description={topic.description}
+          key={topic.id}
+        />
+      )
+    }
+  </ul>;
 
-module.exports = TopicList;
+export default TopicList;

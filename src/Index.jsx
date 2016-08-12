@@ -1,7 +1,8 @@
 //This is the entry point of the application
-var React = require('react');
-var ReactDOM = require('react-dom');
-var AppContainer = require('./AppContainer.jsx');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import AppContainer from './AppContainer';
+
 ReactDOM.render(
   <AppContainer />,
   document.getElementById('app')
