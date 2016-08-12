@@ -2,29 +2,39 @@ window.AppContainer = React.createClass({
   render: function() {
     var topics = [
       {
-        name: 'Webpack',
-        description: 'A module bundler...and so much more',
-        id: 1
+        name: 'Back to basics',
+        description: 'A walkthrough of how we used to do things back in the day',
+        id: 1,
       },
       {
         name: 'npm',
-        description: 'An awesome package manager',
-        id: 2
+        description: 'How can we manage third party code using an awesome package manager',
+        id: 2,
       },
       {
-        name: 'Babel',
-        description: 'The compiler for writing next generation JavaScript',
-        id: 3
+        name: 'Webpack bundling',
+        description: 'How do we use Webpack to bundle our source code',
+        id: 3,
       },
       {
-        name: 'es6',
-        description: 'The latest and greatest in the JavaScript language',
-        id: 4
+        name: 'Webpack devserver ',
+        description: 'How do we use Webpack as a devserver',
+        id: 4,
       },
       {
-        name: 'eslint',
-        description: 'A configurable linter for your es6 code',
-        id: 5
+        name: 'Templating an index.html file with Webpack',
+        description: 'How can we automize an index.html file to load the content we want using Webpack',
+        id: 5,
+      },
+      {
+        name: 'ES6',
+        description: 'How can we used the latest and greates from JavaScript (through Babel through Webpack)',
+        id: 6,
+      },
+      {
+        name: 'Eslint',
+        description: 'How can me make sure that our source code conforms to a specific code style (using Eslint through Webpack)',
+        id: 7,
       },
     ];
     return (
