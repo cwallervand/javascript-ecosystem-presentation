@@ -18,10 +18,18 @@ var config = {
       {
         loader: 'babel', //The name of the loader (babel-loader)
         test: /\.jsx?$/, //A RegEx to tell the loader which files to consider
-        exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude 
+        exclude: /nodes_modules/ //A RegEx to tell the loader which files to exclude
       }
     ]
-  }
+  },
+  //Optimize vendor chunk. This removes alle the modules
+  //This will remove all modules in the vendor chunk from the app chunk. The bundle.js will now contain just your app code, without any of its dependencies. These are in vendor.bundle.js.
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      fileName: 'vendor.bundle.js',
+    })
+  ]
 };
 
 module.exports = config;
