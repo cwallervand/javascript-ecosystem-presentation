@@ -31,8 +31,14 @@ var config = {
       template: 'index_template.html',
       filename: 'index.html',
       inject: false,
+    }),
+    //Optimize vendor chunk. This removes alle the modules
+    //This will remove all modules in the vendor chunk from the app chunk. The bundle.js will now contain just your app code, without any of its dependencies. These are in vendor.bundle.js.
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      fileName: 'vendor.bundle.js',
     })
-  ]
+  ],
 };
 
 module.exports = config;
