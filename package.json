@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.development.js",
+    "clean": "rm -rf node_modules && rm -rf www",
     "start": "npm run build && webpack-dev-server --inline --hot --config webpack.config.development.js --progress --colors --content-base www/"
   },
   "repository": {
